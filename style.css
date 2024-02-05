@@ -1,0 +1,226 @@
+/* Estilos para a barra de navegação */
+.app-bar {
+    background-color: #333;
+    color: white;
+    padding: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .app-bar__nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-bar__nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .app-bar__nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .app-bar__brand img{
+      width: 200px; /* Largura desejada para a imagem */
+      height: auto; /* Altura automática para manter a proporção */
+      display: inline-block; /* Exibir a imagem como elemento em linha */
+      vertical-align: middle; /* Alinhar verticalmente ao centro */
+  }
+  .app-bar__brand p{
+    display: inline-block;
+    margin:0 ;
+  }
+  /* Estilos para as seções de conteúdo */
+  .conteudo {
+    padding: 20px;
+    border: 70px solid #ccc;
+    margin-top: 15px;
+  }
+
+  /* este a apenas teste */
+  .conteudo#calculadora img {
+    width: 200px; /* Largura da imagem */
+    height: auto; /* Altura automática proporcional à largura */
+    border: 2px solid #ccc; /* Borda de 2px sólida cinza */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    /* Outros estilos que você queira adicionar */
+  }
+  
+/* Style de footer */
+footer {
+  background-color: #333;
+  padding: 0.5px;
+  text-align: center;
+  color: white;
+}
+
+.conteudo#home section {
+  display: flex;  /* Posiciona os elementos filhos lado a lado */
+}
+
+.conteudo#home nav {
+  /* Remova a propriedade float: left */
+  width: 12%;
+  background: #ccc;
+  padding: 5px;
+}
+
+.conteudo#home article {
+  /* Remova a propriedade float: left */
+  flex: 1;  /* Ocupa o espaço restante */
+  padding: 147px;
+  background-color: #f1f1f1;
+}
+
+/* Remover esta linha */
+section::after {
+  display: flex;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.conteudo{
+  display: flex;
+}
+
+/* Calculadora codigo */
+#calculator {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+.task-bar {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.task-bar a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.task-bar a:hover {
+  background-color: #ddd;
+}
+
+#dynamicContent {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-item {
+  margin-right: 20px; /* Ajuste a margem conforme necessário */
+  margin-bottom: 10px;
+}
+
+input, select {
+  margin-bottom: 5px;
+}
+
+
+/* Icone de remover factres de corecao */
+.remove-icon-button {
+  background-color: #71cc71; /* Cor de fundo (pode ser ajustada) */
+  color: white;
+  border: none;
+  padding: 0.001px 0.001px; /* Ajuste o padding conforme necessário */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 0.5px 0.5px;
+  cursor: pointer;
+  border-radius: 8px; /* Borda arredondada (pode ser ajustada) */
+}
+
+/* Adiciona um ícone de adição ao lado do botão */
+button i.material-icons {
+  margin-right: 0.2px; /* Espaço entre o texto e o ícone (ajuste conforme necessário) */
+}
+
+/* Estilo do botão "Adicionar" */
+button.add-icon-button {
+  background-color: #171a17; /* Cor de fundo (pode ser ajustada) */
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Ajuste o padding conforme necessário */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 0.5px 0.5px;
+  cursor: pointer;
+  border-radius: 8px; /* Borda arredondada (pode ser ajustada) */
+}
+
+
+
+
+/* campo de entrada e a seleção de unidade estejam lado a lado. */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: inline-block;
+  width: 55px; /* Ajuste conforme necessário */
+}
+
+.input-group input,
+.input-group select {
+  width: 130px; /* Ajuste conforme necessário */
+}
+
+
+
+

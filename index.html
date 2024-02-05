@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrabalhoFina_CM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="app-bar">
+    <nav class="app-bar__nav">
+      <ul>
+        <li><a href="#" onclick="mostrarConteudo('home')"><i class="material-icons">home</i>
+        </a></li>
+        <li><a href="#" onclick="mostrarConteudo('calculadora')"><i class="material-icons">calculate</i>
+        </a></li>
+      </ul>
+    </nav>
+    <div class="app-bar__brand">
+      <img src="imagen/logounicvfct.png" alt="">  
+      <p>SCM - MODELOS DE PROPAGAÇAO </p>
+    </div>
+    <P></P>
+  </div>
+
+  <div class="conteudo" id="home">
+    <!-- Conteúdo da página Home aqui -->
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showContent('Okumura')">Okumura Hata</a></li>
+          <li><a href="#" onclick="showContent('Walfish')">Walfish Ikegami</a></li>
+        </ul>
+      </nav>
+      
+      <article id="Okumura" class="hidden">
+        <h1>Okumura Hata</h1>
+        <p>O modelo empírico que serve atualmente de padrão foi proposto por
+           [Okumura etal., 1968], baseado em medidas na banda [150, 2000] MHz.</p>
+        <p>Okumura apresentou os resultados sob a forma de curvas, tendo [Hata,
+           1980] estabelecido expressões que aproximam algumas dessas curvas, 
+           embora numa gama mais restritiva de parâmetros.
+        </p>
+        <p>O valor padrão do modelo corresponde a um ambiente urbano, sobre
+          terreno quase plano, ao qual são depois adicionados factores de correcção.
+       </p>
+
+       <p>Os ambientes são divididos em 3 classes:</p>
+
+       <ul>
+         <li><strong>Área aberta:</strong> ausência de obstáculos numa região de pelo menos 300 a 400 m diante do móvel;</li>
+         <li><strong>Área suburbana:</strong> existência de alguns obstáculos, não muito densos, na região próxima do móvel;</li>
+         <li><strong>Área urbana:</strong> região com grande densidade urbanística, e edifícios com 2 ou mais andares.</li>
+       </ul>
+
+       <p>O modelo fornece o valor mediano da atenuação de propagação, dependente de:</p>
+
+    <ul>
+      <li><strong>frequência, f;</strong></li>
+      <li><strong>distância do móvel à base, d;</strong></li>
+      <li><strong>altura da antena do móvel ao solo, hm;</strong></li>
+    </ul>
+
+      </article>
+      
+    </section>
+  </div>
+
+  <div class="conteudo" id="calculadora" style="display: none;">
+    <!-- Conteúdo da página Calculadora aqui -->
+    <div id="calculator">
+      <h2>Calculadora Modelo  Okumura Hata</h2>
+      
+      <!-- Barra de tarefas -->
+      <nav class="task-bar">
+        <a href="#" onclick="showCalculation('potenciaRecebida')">Pr[W]</a>
+        <a href="#" onclick="showCalculation('distancia')">D[m]</a>
+        <a href="#" onclick="showCalculation('AtenuacaoELIvre')">LFs[db]</a>
+        <a href="#" onclick="showCalculation('PerdaTotal')">Lp[db]</a>
+        <!-- Adicione mais links conforme necessário -->
+      </nav>
+      <!-- Conteúdo dinâmico que será alterado conforme a escolha do usuário -->
+      <div id="dynamicContent">
+        <!-- Conteúdo inicial, pode ser vazio ou conter informações gerais -->
+      </div>
+      <div id="resultContainer">
+        
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      Fausto Andrade da Graça
+    </p>
+  </footer>
+  <script src="java.js"></script>
+</body>
+</html>
